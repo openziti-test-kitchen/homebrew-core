@@ -21,7 +21,7 @@ class Zrok < Formula
 
   def install
     cd buildpath/"ui" do
-      system "npm", "install", *std_npm_args(prefix: false)
+      system "npm", "install", *std_npm_args(prefix: nil)
       system "npm", "run", "build"
     end
 
